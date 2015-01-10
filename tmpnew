@@ -9,11 +9,5 @@ fi
 
 file=$dir/$name
 
-if `mkdir $file`
-then
-  echo "created $file"
-  cd $file
-else
-  echo "failed to create $file"
-fi
+mktemp -d $file
 

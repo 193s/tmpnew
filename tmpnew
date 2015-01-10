@@ -1,0 +1,19 @@
+#!/bin/sh
+
+dir='/tmp'
+
+if [ $# -eq 0 ]
+then name=$RANDOM
+else name=$1
+fi
+
+file=$dir/$name
+
+if `mkdir $file`
+then
+  echo "created $file"
+  cd $file
+else
+  echo "failed to create $file"
+fi
+

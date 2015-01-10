@@ -1,1 +1,6 @@
 # tmpnew
+
+## Usage
+```sh
+. tmpnew
+```

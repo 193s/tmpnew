@@ -10,4 +10,5 @@ fi
 file=$dir/$name
 
 mktemp -d $file
+cd $file
 
